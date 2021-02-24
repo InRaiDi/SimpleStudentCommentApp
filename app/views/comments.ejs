@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+	<center><div class="wrapper">
+        <h1><%= title %></h1>
+
+	<form method = "post" action="thankyou">
+		<div class="div_container">
+        Course code: <input type="text" size="30" placeholder="Course Code" name="course_code"><br />
+        Course name: <input type="text" size="30" placeholder="Course Name" name="course_name"><br />
+        Student email: <input type="text" size="30" value="<%= stud_email%>" name="user_email"><br />
+        Your comments:<br><textarea name="stud_comment" rows="4" cols="50"></textarea><br>
+        Hardest assignment : <input type="text" size="30" name="hard_assign"><br />
+        Favorite tool: <input type="text" size="30" name="fav_tool"><br />
+		<input type="submit" value="Submit" name="submit">
+
+	</form>
+</div></center>
+
+</body>
+
+</html>
